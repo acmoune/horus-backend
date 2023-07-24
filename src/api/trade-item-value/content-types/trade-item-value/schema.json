@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trade_item_values",
+  "info": {
+    "singularName": "trade-item-value",
+    "pluralName": "trade-item-values",
+    "displayName": "trade-item-value",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trade_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::trade-item.trade-item",
+      "inversedBy": "trade_item_values"
+    },
+    "trade_session": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::trade-session.trade-session",
+      "inversedBy": "trade_item_values"
+    },
+    "Value": {
+      "type": "decimal",
+      "required": true
+    },
+    "AccruedCoupon": {
+      "type": "decimal"
+    },
+    "LastDividend": {
+      "type": "decimal"
+    },
+    "Variation": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

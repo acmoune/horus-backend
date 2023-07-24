@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trade_sessions",
+  "info": {
+    "singularName": "trade-session",
+    "pluralName": "trade-sessions",
+    "displayName": "trade-session"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "SessionDate": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "trade_item_values": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trade-item-value.trade-item-value",
+      "mappedBy": "trade_session"
+    },
+    "boc_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::boc-item.boc-item",
+      "mappedBy": "trade_session"
+    }
+  }
+}

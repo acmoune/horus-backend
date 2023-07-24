@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trade_items",
+  "info": {
+    "singularName": "trade-item",
+    "pluralName": "trade-items",
+    "displayName": "trade-item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "TradeType": {
+      "type": "enumeration",
+      "enum": [
+        "Obligation",
+        "Action"
+      ],
+      "default": "Obligation",
+      "required": true
+    },
+    "Position": {
+      "type": "integer"
+    },
+    "trade_item_values": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::trade-item-value.trade-item-value",
+      "mappedBy": "trade_item"
+    }
+  }
+}

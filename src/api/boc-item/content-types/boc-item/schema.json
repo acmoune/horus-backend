@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "boc_items",
+  "info": {
+    "singularName": "boc-item",
+    "pluralName": "boc-items",
+    "displayName": "boc-item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trade_session": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::trade-session.trade-session",
+      "inversedBy": "boc_items"
+    },
+    "TransactionsValue": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    },
+    "ActionsCapitalization": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    },
+    "ObligationsCapitalization": {
+      "type": "decimal",
+      "required": true,
+      "unique": true
+    }
+  }
+}
