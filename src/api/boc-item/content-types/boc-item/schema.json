@@ -19,19 +19,19 @@
       "inversedBy": "boc_items"
     },
     "TransactionsValue": {
-      "type": "decimal",
+      "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "ActionsCapitalization": {
-      "type": "decimal",
+      "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     },
     "ObligationsCapitalization": {
-      "type": "decimal",
+      "type": "biginteger",
       "required": true,
-      "unique": true
+      "unique": false
     }
   }
 }
