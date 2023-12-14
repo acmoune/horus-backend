@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_social_social_meta_tags",
+  "info": {
+    "displayName": "SocialMetaTags",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text",
+      "required": false
+    },
+    "Description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 200
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Keywords": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

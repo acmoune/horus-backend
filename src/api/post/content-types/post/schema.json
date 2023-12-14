@@ -45,6 +45,19 @@
       "type": "uid",
       "targetField": "Title",
       "required": true
+    },
+    "IsFeatured": {
+      "type": "boolean",
+      "default": false
+    },
+    "Position": {
+      "type": "integer"
+    },
+    "SocialMetaTags": {
+      "type": "component",
+      "repeatable": false,
+      "component": "social.social-meta-tags",
+      "required": true
     }
   }
 }
