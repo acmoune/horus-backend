@@ -24,5 +24,10 @@ module.exports = ({ env }) => ({
             defaultLimit: 25,
             maxLimit: 100
         }
+    },
+    "users-permissions": {
+        config: {
+            jwtSecret: env('PLUGIN_JWT_SECRET'),
+        }
     }
 });
