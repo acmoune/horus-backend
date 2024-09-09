@@ -19,7 +19,15 @@ module.exports = [
       },
     },
   },
-  'strapi::cors',
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['*'],
+      methods: ['*'],
+      headers: ['*'],
+      keepHeaderOnError: true,
+    },
+  },
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
