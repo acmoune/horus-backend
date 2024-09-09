@@ -22,9 +22,8 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['*'],
-      methods: ['*'],
-      headers: ['*'],
+      enable: true,
+      origin: ['http://192.168.15.53:8000', 'https://192.168.15.53:8000'],
       keepHeaderOnError: true,
     },
   },
