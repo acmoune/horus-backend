@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "offers",
+  "info": {
+    "singularName": "offer",
+    "pluralName": "offers",
+    "displayName": "Offer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Description": {
+      "type": "text",
+      "required": true
+    },
+    "DateEcheance": {
+      "type": "date",
+      "required": true
+    },
+    "Maturite": {
+      "type": "integer",
+      "required": true
+    },
+    "TauxFacial": {
+      "type": "decimal",
+      "required": true
+    },
+    "ValeurNominaleUnitaire": {
+      "type": "decimal",
+      "required": true
+    },
+    "DateDeValeur": {
+      "type": "date"
+    },
+    "issuer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::issuer.issuer",
+      "inversedBy": "offers"
+    },
+    "Position": {
+      "type": "integer"
+    },
+    "CodeEmission": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "CodeEmissionDetaille": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

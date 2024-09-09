@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issuers",
+  "info": {
+    "singularName": "issuer",
+    "pluralName": "issuers",
+    "displayName": "issuer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "offers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::offer.offer",
+      "mappedBy": "issuer"
+    }
+  }
+}
