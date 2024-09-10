@@ -25,6 +25,7 @@ module.exports = [
       enable: true,
       //origin: ['http://192.168.15.53:8000', 'https://192.168.15.53:8000'],
       origin: ['*'],
+      headers: ['*'],
       //keepHeaderOnError: true,
     },
   },
