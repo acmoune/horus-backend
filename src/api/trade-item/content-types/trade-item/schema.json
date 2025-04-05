@@ -4,10 +4,11 @@
   "info": {
     "singularName": "trade-item",
     "pluralName": "trade-items",
-    "displayName": "trade-item"
+    "displayName": "trade-item",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {

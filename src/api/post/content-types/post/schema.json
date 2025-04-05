@@ -8,55 +8,22 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "text",
-      "required": true,
-      "unique": true
-    },
     "PostDate": {
       "type": "date",
       "unique": false,
       "required": true
     },
-    "Banner": {
-      "type": "media",
-      "multiple": false,
+    "Description": {
+      "type": "text",
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "unique": false
     },
-    "Thumbnail": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "Content": {
-      "type": "richtext"
-    },
-    "Slug": {
-      "type": "uid",
-      "targetField": "Title",
-      "required": true
-    },
-    "IsFeatured": {
-      "type": "boolean",
-      "default": false
-    },
-    "Position": {
-      "type": "integer"
-    },
-    "SocialMetaTags": {
-      "type": "component",
-      "repeatable": false,
-      "component": "social.social-meta-tags",
+    "Link": {
+      "type": "string",
       "required": true
     }
   }

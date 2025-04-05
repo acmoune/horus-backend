@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -27,12 +27,6 @@
     "Value": {
       "type": "decimal",
       "required": true
-    },
-    "AccruedCoupon": {
-      "type": "decimal"
-    },
-    "LastDividend": {
-      "type": "decimal"
     },
     "Variation": {
       "type": "decimal",
